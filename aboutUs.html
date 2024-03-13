@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+<style>
+    .why_chooseUs{
+        padding: 10px 100px;
+        display: flex;
+        justify-content: center;
+        /* / align-items: center; / */
+    }
+    .why_chooseUs .choose_content1,.why_chooseUs .choose_content2{
+        width: 60%;
+    }
+    .choose_content2{
+        margin-left: 30px;
+    }
+    .why_chooseUs .choose_image2{
+        width: 40%;
+    }
+    .why_chooseUs .choose_image {
+        width: 35%;
+        margin-left: 30px;
+    }
+    .our_teamList {
+     padding: 25px 0;
+    box-shadow: 0 12px 33px rgba(0, 0, 0, 0.2);
+    width: 85%;
+    margin: 30px auto;
+    background: #a9a9a945;
+        .team_details{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .team_heading{
+            text-align: center;
+            margin-bottom: 15px;
+     }
+     .user_image{
+        width: 200px;
+        height: 250px;
+    }
+    .user_name{
+        font-weight: bold;
+    }
+    .user_details{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    margin-bottom: 20px;
+    }
+}
+.choose_image img ,.choose_image2 img{
+     width: 300px;
+     height: 270px;
+}
+.individual_social_media i{
+     font-size: 30px;
+     display: none;
+}
+.individual_social_media i:nth-child(2){
+     margin-left: 20px;
+     margin-right: 20px;
+}
+.role{
+     color: #888;
+    font-size: 14px;
+}
+.why_chooseUs:nth-child(1){
+     margin-bottom: 25px;
+}
+    @media (max-width: 950px) {
+        .why_chooseUs{
+        padding: 0 50px;
+        }
+}
+    @media (max-width: 800px) {
+        .why_chooseUs{
+            flex-direction: column;
+            align-items: center;
+        }
+        .why_chooseUs:nth-child(even){
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .why_chooseUs .choose_content1,.why_chooseUs .choose_content2  {
+            width: 100%;
+        }
+        .why_chooseUs .choose_image2 ,.why_chooseUs .choose_image{
+            width: 300px;
+        }
+}
+</style>
+</head>
+<body>
+     <div id="navbar" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);margin-bottom: 20px;"></div>
+
+    <div class="aboutUs">
+        <div class="why_chooseUs">
+            <div class="choose_content1">
+                <h1>Why Choose Us?</h1>
+                <br>
+                <p>We offer premium services at affordable rates. With a guarantee of spraying within 48
+                    hours, regardless of your farm's size, we ensure timely protection for your crops. 
+                    <br>
+                    <br>Our expert team of well-trained pilots and professionals, coupled with state-of-the-art technology,
+                    delivers world-class service right to your doorstep. Trust Aeroworm for efficient, precise, and
+                    hassle-free drone spraying solutions tailored to your agricultural needs.</p>
+                </div>
+                <div class="choose_image">
+                    <img src="../assets/aboutus1.jpg" alt="" width="300px" height="300px">
+                </div>
+        </div>
+        <div class="why_chooseUs">
+            <div class="choose_image2">
+                <img src="../assets/aboutus2.jpg" alt="" width="300px" height="300px">
+            </div>
+            <div class="choose_content2">
+                <h1>Our Mission</h1>
+                <br>
+                <p>Our mission at Aeroworm is to revolutionize agriculture by providing cutting-edge drone 
+                    spraying services at affordable prices. We aim to enhance productivity and sustainability in 
+                    farming practices while fostering the widespread adoption of technology in agriculture.
+                    <br><br> By offering efficient and cost-effective solutions, we strive to elevate the level of technology 
+                    penetration in the agricultural sector, empowering farmers with innovative tools for crop 
+                    protection and management.
+                    </p>
+                </div>
+               
+        </div>
+        <div class="our_teamList">
+            <h1 class="team_heading">Our Team</h1>
+            <div class="team_details">
+            <div class="user_details">
+                <img src="../assets/user1.jpg" alt="" class="user_image">
+                <p class="user_name">
+                    Ragul M
+                </p>
+                <p class="role">
+                    Chief Operating Officer
+                </p>
+                <div class="individual_social_media">
+                     <i class="fa-brands fa-facebook"></i>
+                     <i class="fa-brands fa-instagram"></i>
+                     <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="user_details">
+                <img src="../assets/user2.jpg" alt=""  class="user_image">
+                <p class="user_name">
+                    Neelesh Kumaran T
+                </p>
+                <p class="role">
+                    Chief Financial Officer
+                </p>
+                <div class="individual_social_media">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+               </div>
+            </div>
+            <div class="user_details">
+                <img src="../assets/user3.jpg" alt=""  class="user_image">
+                <p class="user_name">
+                    Rohith P
+                </p>
+                <p class="role">
+                    Chief Technology Officer
+                </p>
+                <div class="individual_social_media">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+               </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+<script src="../script.js"></script>
+</html>

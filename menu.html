@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          .navbar {
+               /* background-color: #333; */
+               display: flex;
+               justify-content: flex-end;
+          }
+
+          .navbar a {
+               color: #000000;
+               text-align: center;
+               padding: 14px 20px;
+               text-decoration: none;
+          }
+
+          .navbar a:hover {
+               background-color: #ddd;
+               color: black;
+          }
+
+          .navbar a.active {
+               background-color: #04AA6D;
+               color: white;
+               border-radius: 25px;
+          }
+
+          .navbar .icon {
+               display: none;
+          }
+
+          .main {
+               display: flex;
+               justify-content: space-between;
+               width: 90%;
+               margin: 0px auto;
+               align-items: center;
+               height: 10%;
+               padding: 1% 0;
+          }
+          .menu_bar{
+               display: none;
+          }
+          @media screen and (max-width: 750px) {
+
+               .main img{
+                    width: 200px;
+               }
+          }
+
+          @media screen and (max-width: 700px) {
+               .main img{
+                    width: 180px;
+               }
+
+          }
+          @media screen and (max-width: 650px) {
+               .main img{
+                    width: 180px;
+               }
+               .menu_bar{
+                    display: block;
+               }
+               .navbar{
+                    display: none;
+               }
+
+          }
+     </style>
+</head>
+<body>
+     <div class="main">
+          <img src="./assets/LOGO.png" alt="" width="250px" height=" 50px">
+          <div class="navbar" id="myNavbar">
+               <a href="./index.html">Home</a>
+               <a href="./aboutUs.html">About</a>
+               <a href="./contactUs.html">Contact Us</a>
+               <a href="./contactUs.html" class="active">Get in Touch</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+               </a>
+          </div>
+          <div class="menu_bar"><i class="fa-solid fa-bars" style="font-size: 30px;"></i></div>
+     </div>
+</body>
+</html>
